@@ -1,0 +1,6 @@
+{
+  "dotnet.defaultSolution": "Service.slnx",
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+  "dotnet.server.useOmnisharp": false,
+  "dotnet.unitTests.runSettingsPath": "coverlet.runsettings"
+}

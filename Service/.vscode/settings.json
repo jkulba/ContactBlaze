@@ -1,0 +1,49 @@
+{
+    // Format on save
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    // Code action on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    // C# specific settings
+    "omnisharp.enableEditorConfigSupport": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+    "dotnet.server.useOmnisharp": false,
+    // File associations
+    "files.associations": {
+        "*.props": "xml",
+        "*.targets": "xml"
+    },
+    // Auto save
+    "files.autoSave": "onFocusChange",
+    // Trim trailing whitespace
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    // Editor settings
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    // Language specific formatting
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+    },
+    "[xml]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on"
+    }
+}

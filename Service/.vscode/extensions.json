@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "ms-dotnettools.csdevkit",
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-vscode.vscode-json",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-vscode.test-adapter-converter",
+        "formulahendry.dotnet-test-explorer",
+        "jchannon.csharpextensions",
+        "kreativ-software.csharpextensions",
+        "ms-vscode.powershell"
+    ]
+}
