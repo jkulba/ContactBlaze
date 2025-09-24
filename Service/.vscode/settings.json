@@ -8,10 +8,21 @@
         "source.organizeImports": "explicit"
     },
     // C# specific settings
-    "omnisharp.enableEditorConfigSupport": true,
-    "omnisharp.enableRoslynAnalyzers": true,
-    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
     "dotnet.server.useOmnisharp": false,
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+    "dotnet.server.suppressLspErrorToasts": false,
+    "dotnet.unitTests.runSettingsPath": "./coverlet.runsettings",
+    "dotnet.defaultSolution": "./Service.slnx",
+    // Language Server settings
+    "csharp.semanticHighlighting.enabled": true,
+    "csharp.inlayHints.enableInlayHintsForTypes": true,
+    "csharp.inlayHints.enableInlayHintsForParameters": true,
+    // Analysis settings
+    "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+    "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+    // Additional IntelliSense settings
+    "dotnet.server.startTimeout": 60000,
+    "dotnet.server.trace": "Information",
     // File associations
     "files.associations": {
         "*.props": "xml",
