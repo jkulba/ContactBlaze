@@ -29,10 +29,17 @@ public class User
     // Navigation property for phone numbers
     public ICollection<PhoneNumber> PhoneNumbers { get; set; } = new List<PhoneNumber>();
 
+    // Navigation property for addresses
+    public ICollection<Address> Addresses { get; set; } = new List<Address>();
+
     // Computed property for display purposes
     public string FullName => $"{FirstName} {LastName}".Trim();
 
     // Convenience properties
     public PhoneNumber? PrimaryPhoneNumber => PhoneNumbers.FirstOrDefault(p => p.IsPrimary);
     public PhoneNumber? MobilePhone => PhoneNumbers.FirstOrDefault(p => p.Type == PhoneNumberType.MOBILE);
+
+    public Address? PrimaryAddress => Addresses.FirstOrDefault(a => a.IsPrimary);
+    public Address? HomeAddress => Addresses.FirstOrDefault(a => a.Type == AddressType.HOME);
+    public Address? WorkAddress => Addresses.FirstOrDefault(a => a.Type == AddressType.WORK);
 }
