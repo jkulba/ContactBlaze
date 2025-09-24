@@ -1,18 +1,18 @@
 <Project>
-  
+
   <PropertyGroup>
     <!-- Enable Central Package Management -->
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    
+
     <!-- Target Framework -->
     <TargetFramework>net10.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    
+
     <!-- C# Language Features -->
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <EnablePreviewFeatures>false</EnablePreviewFeatures>
-    
+
     <!-- Code Quality and Analysis -->
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
@@ -20,13 +20,13 @@
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <AnalysisLevel>latest</AnalysisLevel>
-    
+
     <!-- Performance and Optimization -->
     <Optimize>true</Optimize>
     <DebugType>portable</DebugType>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn> <!-- Missing XML documentation -->
-    
+
     <!-- Assembly Information -->
     <Company>ContactBlaze</Company>
     <Product>ContactBlaze Service</Product>
@@ -34,28 +34,28 @@
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <Version>1.0.0</Version>
-    
+
     <!-- Build Properties -->
     <Deterministic>true</Deterministic>
     <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    
+
     <!-- Repository Information -->
     <RepositoryUrl>https://github.com/jkulba/ContactBlaze</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryBranch>main</RepositoryBranch>
-    
+
     <!-- Runtime Configuration -->
     <InvariantGlobalization>false</InvariantGlobalization>
     <UseSystemResourceKeys>false</UseSystemResourceKeys>
-    
+
     <!-- Trimming and AOT -->
     <IsTrimmable>false</IsTrimmable>
     <TrimMode>partial</TrimMode>
     <IsAotCompatible>false</IsAotCompatible>
-    
+
     <!-- Security -->
     <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
     <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -87,9 +87,6 @@
     <!-- Code Analysis -->
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" PrivateAssets="all" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" PrivateAssets="all" />
-    
-    <!-- Development Dependencies -->
-    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="all" />
   </ItemGroup>
 
   <!-- Directory.Build.targets import (if exists) -->
